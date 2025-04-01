@@ -24,15 +24,15 @@ public class OrderApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Order order1 = new Order(1, 200.0, 0.1);
+		Order order1 = new Order(1, 150.0, 20.0);
 		String resultado1 = calcValueAll.calcularValorTotal(order1);
 		System.out.println(resultado1);
 
-		Order order2 = new Order(2, 100, 0.1);
+		Order order2 = new Order(2, 800.0, 10.0);
 		String resultado2 = calcValueAll.calcularValorTotal(order2);
 		System.out.println(resultado2);
 
-		Order order3 = new Order(3, 50, 0.1);
+		Order order3 = new Order(3, 95.90, 0.0);
 		String reusltado3 = calcValueAll.calcularValorTotal(order3);
 		System.out.println(reusltado3);
 	}
